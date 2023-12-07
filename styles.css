@@ -3,46 +3,48 @@
     font-family: 'Roboto' , sans-serif;
     font-size: 62.5%;
 }
-main {
-    max-width: 120rem;
-    margin: 0 auto;
+body {
+    background-color: blanchedalmond;
 }
-h1 {
-    font-size: 4.5rem;
-    padding-left: 5rem;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    color: salmon;
+                                      /*Header*/
+header {
+    max-width: 100vw;
+    border-bottom: 0.1rem solid salmon;
+    margin: 0 4rem;
 }
+
 p {
     font-size: 1.8rem;
-    padding-left: 5rem;
 }
 button {
     cursor: pointer;
     font-size: 1.8rem;
-    margin-left: 5rem;
     border: 0.1rem double salmon;
-    border-radius: 1rem;
-    padding: 0.5rem;
+    border-radius: 1.5rem;
+    padding: 1rem 2rem;
     background-color: salmon;
     color: white;
     
 }
 button:hover {  
     font-size: 1.8rem;
-    margin-left: 5rem;
     border: 0.1rem solid salmon;
-    border-radius: 1rem;
-    padding: 0.5rem;
+    border-radius: 1.5rem;
+    padding: 1rem 2rem;
     background-color: white;
     color: salmon;
     box-shadow: 0.2rem 0.2rem 0.2rem 0rem salmon;
 }
+.title1 {
+    font-size: 4.5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: salmon;
+}
 .hero {
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 2fr 2fr;
     grid-auto-rows: 40rem;
 }
 .logo-image {
@@ -53,4 +55,34 @@ button:hover {
 }
 .info {
     align-self: center;
+    padding-left: 10rem;
 }
+
+                                       /*Main*/
+.main-container {
+    margin: 10rem 0;
+}
+.title2 {
+    display: grid;
+    justify-content: center;
+    color: salmon;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+.foods {   
+    display: grid;
+    grid-template-columns: repeat(4, minmax(20rem, 25rem));
+    grid-auto-rows: 1fr;
+    gap: 2.5rem;
+    justify-content: center;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /*escala todas las imágenes a su contenedor para que no se corten*/
+    object-position: center; /*Pone los objetos al centro del contenedor*/
+}
+.main-image {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
