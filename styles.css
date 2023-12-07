@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 62.5%;
+}
+main {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 4.5rem;
+    padding-left: 5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: salmon;
+}
+p {
+    font-size: 1.8rem;
+    padding-left: 5rem;
+}
+button {
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-left: 5rem;
+    border: 0.1rem double salmon;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: salmon;
+    color: white;
+    
+}
+button:hover {  
+    font-size: 1.8rem;
+    margin-left: 5rem;
+    border: 0.1rem solid salmon;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: white;
+    color: salmon;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0rem salmon;
+}
+.hero {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-auto-rows: 40rem;
+}
+.logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+.info {
+    align-self: center;
+}
